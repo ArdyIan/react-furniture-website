@@ -1,0 +1,76 @@
+.hero-container {
+  display: flex;
+  justify-content: space-between; /* Gambar kiri, teks kanan */
+  align-items: center;
+  padding: 40px 80px; /* Jarak dari tepi halaman */
+  gap: 40px;
+  height: calc(100vh - 10px); /* Sesuaikan tinggi dengan navbar */
+  box-sizing: border-box;
+  /* background-color: white; */
+}
+
+.sofa {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  /* margin-left: 50px; */
+  /* align-items: center; */
+}
+
+.text-hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #333;
+  padding-left: 90px;
+}
+
+/* We Create your home More aesthetic */
+.headline {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+  padding-bottom: 10px;
+}
+
+/* Furniture power is a software as a service for multipurpose business management systems. */
+.text1 {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: start;
+  gap: 30px;
+  padding-bottom: 20px;
+}
+
+.checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.check-icon {
+  font-size: 1.5rem;
+  color: #28a745;
+}
+
+/* Valuation Services */
+.check-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+}
+
+/* Sometimes features require a short description. This can be a detailed description. */
+.check-description {
+  font-size: 1.2rem;
+  line-height: 2;
+  color: black;
+  padding-top: 10px;
+}

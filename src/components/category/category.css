@@ -1,0 +1,100 @@
+.category-left {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  /* text-align: center; */
+  /* padding: 20px;  */
+  box-sizing: border-box;
+  position: relative;
+  /* z-index: 1;  */
+  padding-left: 100px;
+  /* gap: 20px; */
+}
+
+.content-left {
+    flex: 1;
+    text-align: left;
+    /* align-items: flex-start; */
+    padding-right: 20px;
+}
+
+.headline1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+  
+}
+
+.cat-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: black;
+  padding-top: 80px;
+}
+
+/* clickable text check all */
+
+.clickable-text {
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  transition: color 0.3s ease-in-out;
+  padding-top: 50px;
+}
+
+.clickable-text:hover {
+  color: #1f340e;
+}
+
+.check-all-click {
+  position: relative;
+  font-weight: 800;
+}
+
+.check-all-click::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #1aff00;
+  transition: width 0.3s ease-in-out;
+}
+
+.clickable-text:hover .check-all-click::after {
+  width: 100%;
+}
+
+
+/* carousel slider */
+/* carousel slider */
+.carousel-slider1 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.carousel-slider1 button {
+    position: absolute; /* Posisi absolut relatif terhadap carousel */
+    bottom: 10px; /* Tempatkan tombol di bawah carousel */
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 10; 
+}
+
+.carousel-slider1 button:first-of-type {
+    left: 20%; 
+}
+
+.carousel-slider1 button:last-of-type {
+    left: 50%; 
+}

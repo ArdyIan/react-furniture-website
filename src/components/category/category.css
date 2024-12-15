@@ -9,22 +9,28 @@
   box-sizing: border-box;
   position: relative;
   /* z-index: 1;  */
-  padding-left: 100px;
-  /* gap: 20px; */
+  /* padding: 70px; */
+  padding-left: 70px;
+  gap: 20px;
 }
 
+
+
+
 .content-left {
-    flex: 1;
-    text-align: left;
-    /* align-items: flex-start; */
-    padding-right: 20px;
+  flex: 1;
+  text-align: left;
+  max-width: 50%;
+  /* align-items: flex-start; */
+  padding-right: 20px;
+  padding-top: 5%;
 }
 
 .headline1 {
   font-size: 2.5rem;
   font-weight: bold;
   color: black;
-  
+
 }
 
 .cat-text {
@@ -42,6 +48,7 @@
   color: #000000;
   transition: color 0.3s ease-in-out;
   padding-top: 50px;
+  padding-bottom: 50%;
 }
 
 .clickable-text:hover {
@@ -68,33 +75,52 @@
   width: 100%;
 }
 
+/* carousel slider */
+/* carousel slider */
+.swiper-container {
+  flex: 1;
+  max-width: 70%; 
+  height: auto; 
+}
 
-/* carousel slider */
-/* carousel slider */
+.swiper-slide {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 .carousel-slider1 {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .carousel-slider1 button {
-    position: absolute; /* Posisi absolut relatif terhadap carousel */
-    bottom: 10px; /* Tempatkan tombol di bawah carousel */
-    background-color: rgba(0, 0, 0, 0.5); 
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    z-index: 10; 
+  position: absolute; /* Posisi absolut relatif terhadap carousel */
+  bottom: 10px; /* Tempatkan tombol di bawah carousel */
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 10;
 }
 
 .carousel-slider1 button:first-of-type {
-    left: 20%; 
+  left: 20%;
 }
 
 .carousel-slider1 button:last-of-type {
-    left: 50%; 
+  left: 50%;
 }

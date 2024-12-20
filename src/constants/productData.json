@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "wood Chair",
+    "price": "$75.00",
+    "image": "/assets/wood-chair.png"
+  },
+  {
+    "id": 2,
+    "title": "Ceiling Light",
+    "price": "$50.00",
+    "image": "/assets/ceiling-light.png"
+  },
+  {
+    "id": 3,
+    "title": "Paper Cupboard",
+    "price": "$105.00",
+    "image": "/assets/paper-cupboard.png"
+  },
+  {
+    "id": 4,
+    "title": "Ole Gundor Spring",
+    "price": "$82.00",
+    "image": "/assets/bed.png"
+  },
+  {
+    "id": 5,
+    "title": "Treos Sereos 911",
+    "price": "$200.00",
+    "image": "/assets/treos-sereos.png"
+  },
+  {
+    "id": 6,
+    "title": "Multi Bilderman Slibberman",
+    "price": "$45.00",
+    "image": "/assets/multi-bilderman.png"
+  },
+  {
+    "id": 7,
+    "title": "XORA Corner Desk",
+    "price": "$250.00",
+    "image": "/assets/corner-desk.png"
+  },
+  {
+    "id": 8,
+    "title": "Black Forest Series Wooden",
+    "price": "$225.00",
+    "image": "/assets/black-forest-wood.png"
+  },
+  {
+    "id": 9,
+    "title": "Minimalist Table",
+    "price": "$38.00",
+    "image": "/assets/table-minimalist.jpg"
+  }
+]

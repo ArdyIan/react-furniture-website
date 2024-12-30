@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Josh Smith",
+    "profile": "/assets/profile-pic1.png",
+    "position": "Manager of The New York Times",
+    "testimoni": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
+  {
+    "id": 2,
+    "name": "Jane Doe",
+    "profile": "/assets/profile-pic1.png",
+    "position": "CEO at company",
+    "testimoni": "miawww miawww miawww miawwww"
+  },
+  {
+    "id": 3,
+    "name": "Jane Doe",
+    "profile": "/assets/profile-pic1.png",
+    "position": "CEO at company",
+    "testimoni": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
+  {
+    "id": 4,
+    "name": "Jane Doe",
+    "profile": "/assets/profile-pic1.png",
+    "position": "CEO at company",
+    "testimoni": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
+  {
+    "id": 5,
+    "name": "Jane Doe",
+    "profile": "/assets/profile-pic1.png",
+    "position": "CEO at company",
+    "testimoni": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  }
+]

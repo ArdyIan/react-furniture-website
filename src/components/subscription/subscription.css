@@ -1,0 +1,72 @@
+.subcription {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+
+.img-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.subs-content-wrapper {
+  position: absolute;
+  top: 50%;
+  right: 130px;
+  transform: translateY(-50%);
+  /* width: fit-content; */
+  text-align: right;
+  z-index: 1;
+}
+
+.discount-heading {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: white;
+  text-align: left;
+}
+
+.join-mail {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 200;
+  color: white;
+  text-align: left;
+}
+
+.email-subscription {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+.email-subscription-input {
+  flex-grow: 1;
+  width: 30rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  background-color: white;
+}
+
+.shop-now-button {
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #212121;
+  color: white;
+  cursor: pointer;
+}
+
+.shop-now-button:hover {
+  background-color: #303030;
+}

@@ -47,6 +47,7 @@
   align-items: center;
   gap: 2rem;
   margin-bottom: 1.25rem;
+  flex-direction: column;
 }
 
 .email-subscription-input {
@@ -59,9 +60,10 @@
 }
 
 .shop-now-button {
+  width: 19rem;
   padding: 1rem 1.5rem;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   background-color: #212121;
   color: white;
   cursor: pointer;
@@ -69,4 +71,14 @@
 
 .shop-now-button:hover {
   background-color: #303030;
+}
+
+/* reCaptcha */
+
+.error {
+  color: red;
+}
+
+.success {
+  color: lightgreen;
 }

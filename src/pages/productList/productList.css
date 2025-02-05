@@ -1,0 +1,192 @@
+.header-product-list {
+  display: flex;
+  margin-bottom: 1.25rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-click {
+  font-size: 2rem;
+  line-height: 1.75rem;
+  font-weight: bold;
+  transition: transform 0.4s ease-in-out;
+}
+
+.home-click.cart-opened {
+  transform: translateX(-125px);
+  transition: transform 0.4s ease-in-out;
+}
+
+.cart-tab {
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-radius: 9999px;
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: transform 0.4s ease-in-out;
+}
+
+.cart-tab.cart-opened {
+  transform: translateX(-250px);
+  transition: transform 0.4s ease-in-out;
+}
+
+.cart-img {
+  width: 1.5rem;
+}
+
+.cart-total-item {
+  display: flex;
+  position: absolute;
+  top: 66.666667%;
+  right: 50%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px;
+  width: 1.25rem;
+  height: 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #ffffff;
+  background-color: #ef4444;
+}
+
+.carousel-wrapper {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  height: 100vh;
+}
+
+/* yang handle perubahan ketika carttab di klik geser ke kiri */
+.slider-container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cart-opened {
+  transform: translateX(-250px); /* Sesuaikan sesuai lebar CartTab */
+}
+
+.product-container {
+  flex: 1;
+  margin-top: 2rem;
+  transition: transform 0.4s ease-in-out;
+}
+
+.headline-text-display {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #333;
+  padding-left: 20px;
+  padding-right: 100px;
+  text-align: center;
+}
+
+/* The Best Furniture */
+.headline-display {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+  /* padding-bottom: 50px; */
+}
+
+/* Furnitre power is a software as services for multiperpose business management system, expecially for them who are running two or more business exploree the future Furnitre power is a software as services */
+.text-display {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: black;
+  padding-bottom: 30px;
+  align-items: center;
+  /* -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden; */
+}
+.product-list {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-product {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.see-all-product {
+  color: #2563eb;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  cursor: pointer;
+}
+
+.see-all-product:hover {
+  color: #1d4ed8;
+}
+
+/* carousel slider  */
+
+.img-container {
+  position: relative;
+  width: 180px;
+  height: 250px;
+}
+
+.display-product {
+  /* width: 100%; */
+  /* height: 100%; */
+  height: 250px;
+  width: 180px;
+  object-fit: contain;
+  /* align-items: center; */
+
+  /* padding: 20px; */
+}
+
+.slider-img-cont h2 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.slider-img-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  /* text-align: center; */
+}
+
+.slider-img-cont p {
+  margin-top: 10px;
+  font-size: 0.75rem;
+  /* justify-content: flex-start; */
+  color: #333;
+}
+
+.icon-plus {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 2;
+  font-size: 1rem;
+  color: #000000;
+  background-color: rgb(237, 237, 237);
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.icon-plus:hover {
+  background-color: #333;
+  color: #fff;
+}

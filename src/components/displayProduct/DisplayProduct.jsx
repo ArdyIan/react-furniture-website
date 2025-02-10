@@ -1,11 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./displayProduct.css";
 import sofa from "../../assets/dining-room.png";
-
+import data from "../../constants/productData.json";
 import Slider from "react-slick";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
+
+//display product homepage
 
 function DisplayProduct() {
   var settings = {
@@ -47,113 +49,33 @@ function DisplayProduct() {
   return (
     <div className="slider-container">
       <div className="headline-text-display">
-        <span className="headline-display">All Product</span>
+        <span className="headline-display">Our Product</span>
         <span className="text-display">
           The products we provide only for you as our service are selected from the <br />
           best products with number 1 quality in the world
         </span>
+        <div className="product-list">
+          <h2 className="list-product">List Product</h2>
+          <Link to={"/product"} className="see-all-product">
+            See All
+          </Link>
+        </div>
       </div>
       <Slider {...settings}>
-        <div className="slider-img-cont">
-          <div className="img-container">
-            <FontAwesomeIcon icon={faPlus} className="icon-plus" />
-            <img src={sofa} alt="sofa" className="display-product" />
+        {data.map((item) => (
+          <div key={item.id} className="slider-img-cont">
+            <div className="img-container">
+              {/* <FontAwesomeIcon icon={faPlus} className="icon-plus" /> */}
+              <img src={item.image} alt="sofa" className="display-product" />
+            </div>
+            <h2>{item.title}</h2>
+            <p>{item.price}</p>
           </div>
-
-          <h2>item 1</h2>
-          <p>Item 1</p>
-        </div>
-        <div className="slider-img-cont">
-          <div className="img-container">
-            <FontAwesomeIcon icon={faPlus} className="icon-plus" />
-            <img src={sofa} alt="sofa" className="display-product" />
-          </div>
-
-          <h2>item 1</h2>
-          <p>Item 1</p>
-        </div>
-        <div className="slider-img-cont">
-          <div className="img-container">
-            <FontAwesomeIcon icon={faPlus} className="icon-plus" />
-            <img src={sofa} alt="sofa" className="display-product" />
-          </div>
-
-          <h2>item 1</h2>
-          <p>Item 1</p>
-        </div>
-        <div className="slider-img-cont">
-          <div className="img-container">
-            <FontAwesomeIcon icon={faPlus} className="icon-plus" />
-            <img src={sofa} alt="sofa" className="display-product" />
-          </div>
-
-          <h2>item 1</h2>
-          <p>Item 1</p>
-        </div>
-        <div className="slider-img-cont">
-          <div className="img-container">
-            <FontAwesomeIcon icon={faPlus} className="icon-plus" />
-            <img src={sofa} alt="sofa" className="display-product" />
-          </div>
-
-          <h2>item 1</h2>
-          <p>Item 1</p>
-        </div>
-        <div className="slider-img-cont">
-          <div className="img-container">
-            <FontAwesomeIcon icon={faPlus} className="icon-plus" />
-            <img src={sofa} alt="sofa" className="display-product" />
-          </div>
-
-          <h2>item 1</h2>
-          <p>Item 1</p>
-        </div>
-        <div className="slider-img-cont">
-          <div className="img-container">
-            <FontAwesomeIcon icon={faPlus} className="icon-plus" />
-            <img src={sofa} alt="sofa" className="display-product" />
-          </div>
-
-          <h2>item 1</h2>
-          <p>Item 1</p>
-        </div>
-        <div className="slider-img-cont">
-          <div className="img-container">
-            <FontAwesomeIcon icon={faPlus} className="icon-plus" />
-            <img src={sofa} alt="sofa" className="display-product" />
-          </div>
-
-          <h2>item 1</h2>
-          <p>Item 1</p>
-        </div>
-        <div className="slider-img-cont">
-          <div className="img-container">
-            <FontAwesomeIcon icon={faPlus} className="icon-plus" />
-            <img src={sofa} alt="sofa" className="display-product" />
-          </div>
-
-          <h2>item 1</h2>
-          <p>Item 1</p>
-        </div>
-        <div className="slider-img-cont">
-          <div className="img-container">
-            <FontAwesomeIcon icon={faPlus} className="icon-plus" />
-            <img src={sofa} alt="sofa" className="display-product" />
-          </div>
-
-          <h2>item 1</h2>
-          <p>Item 1</p>
-        </div>
-        <div className="slider-img-cont">
-          <div className="img-container">
-            <FontAwesomeIcon icon={faPlus} className="icon-plus" />
-            <img src={sofa} alt="sofa" className="display-product" />
-          </div>
-
-          <h2>item 1</h2>
-          <p>Item 1</p>
-        </div>
+        ))}
       </Slider>
+      <Link to={"/product"} className="btn-shop-prod-list">
+        Shop Now
+      </Link>
     </div>
   );
 }

@@ -9,6 +9,7 @@
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
+  /* z-index: 1; */
   /* display: block; */
 }
 
@@ -43,6 +44,30 @@
   text-overflow: ellipsis;
   overflow: hidden; */
 }
+.product-list {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-product {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.see-all-product {
+  color: #2563eb;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  cursor: pointer;
+}
+
+.see-all-product:hover {
+  color: #1d4ed8;
+}
 
 /* carousel slider  */
 
@@ -57,7 +82,7 @@
   /* height: 100%; */
   height: 250px;
   width: 180px;
-  object-fit: cover;
+  object-fit: contain;
   /* align-items: center; */
 
   /* padding: 20px; */
@@ -90,10 +115,38 @@
   right: 10px;
   z-index: 2;
   font-size: 1rem;
-  color: #333;
-  background-color: rgb(202, 202, 202);
+  color: #000000;
+  background-color: rgb(237, 237, 237);
   border-radius: 50%;
   padding: 5px;
   cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.icon-plus:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn-shop-prod-list {
+  display: flex;
+  /* margin-top: 2.5rem; */
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 4rem auto 0;
+  background-color: rgba(121, 119, 119, 0.5);
+  color: black;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-shop-prod-list:hover {
+  background-color: rgb(160, 159, 159);
+  color: #002d62;
 }

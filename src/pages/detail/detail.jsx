@@ -57,20 +57,24 @@ const Detail = () => {
         <div>
           <img src={detail.image} alt={detail.title} className="product-image-detail" />
         </div>
-  
+
         <div className="product-info-section">
           <h1 className="product-title-detail">{detail.title}</h1>
           <p className="product-price-detail">${detail.price}</p>
           <p className="product-description">{detail.description}</p>
-  
+
           {/* Bagian Quantity Selector */}
           <div className="quantity-selector">
             <div className="quantity-control">
-              <button className="quantity-button" onClick={handleMinusQuantity}>-</button>
+              <button className="quantity-button" onClick={handleMinusQuantity}>
+                -
+              </button>
               <span className="quantity-display">{quantity}</span>
-              <button className="quantity-button" onClick={handlePlusQuantity}>+</button>
+              <button className="quantity-button" onClick={handlePlusQuantity}>
+                +
+              </button>
             </div>
-  
+
             {/* Tombol Add to Cart tetap seperti semula */}
             <button className="add-to-cart-btn" onClick={handleAddToCart}>
               Add To Cart
@@ -80,7 +84,6 @@ const Detail = () => {
       </div>
     </div>
   );
-  
 };
 
 export default Detail;

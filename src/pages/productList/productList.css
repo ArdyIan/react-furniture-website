@@ -67,7 +67,7 @@
 }
 
 .cart-opened {
-  transform: translateX(-250px); /* Sesuaikan sesuai lebar CartTab */
+  transform: translateX(-250px);
 }
 
 .product-container {

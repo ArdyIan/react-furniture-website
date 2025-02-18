@@ -64,10 +64,13 @@ function DisplayProduct() {
       <Slider {...settings}>
         {data.map((item) => (
           <div key={item.id} className="slider-img-cont">
-            <div className="img-container">
-              {/* <FontAwesomeIcon icon={faPlus} className="icon-plus" /> */}
-              <img src={item.image} alt="sofa" className="display-product" />
-            </div>
+            {/* <div className="img-container"> */}
+            {/* <FontAwesomeIcon icon={faPlus} className="icon-plus" /> */}
+            {/* <img src={item.image} alt="sofa" className="display-product" /> */}
+            {/* </div>  */}
+            <Link to={"/product"} className="img-container">
+              <img src={item.image} alt={item.title} className="display-product" />
+            </Link>
             <h2>{item.title}</h2>
             <p>{item.price}</p>
           </div>

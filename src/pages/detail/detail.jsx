@@ -7,6 +7,7 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "../../stores/cart";
 import { useNavigate } from "react-router-dom";
 import "./detail.css";
+import { Link } from "react-router-dom";
 
 const Detail = () => {
   const { slug } = useParams();
@@ -52,7 +53,12 @@ const Detail = () => {
 
   return (
     <div>
-      <h2 className="heading-title">PRODUCT DETAIL</h2>
+      <ul className="prod-list-header">
+        <Link to="/" className="home-click-prod-list">
+          FurniShop
+        </Link>
+        <h2 className="heading-title">PRODUCT DETAIL</h2>
+      </ul>
       <div className="product-detail-container">
         <div>
           <img src={detail.image} alt={detail.title} className="product-image-detail" />

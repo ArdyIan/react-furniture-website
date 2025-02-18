@@ -2,6 +2,7 @@ import React from "react";
 import "./category.css";
 import Slider from "react-perfect-slider";
 import sofa from "../../assets/sofa.png";
+import { Link } from "react-router-dom";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -21,7 +22,10 @@ const Category = ({ onClick }) => {
         <div className="headline1">Store Now</div>
         <div className="cat-text">Get the latest items immediately with promo prices</div>
         <span className="clickable-text" onClick={onClick}>
-          <span className="check-all-click">Check All -&gt;</span>
+          {/* <span className="check-all-click">Check All -&gt;</span> */}
+          <Link to={"/product"} className="check-all-click">
+            Check All -&gt;
+          </Link>
         </span>
       </div>
 
@@ -45,20 +49,17 @@ const Category = ({ onClick }) => {
           modules={[FreeMode]}
           // modules={[FreeMode, Pagination]} //pagination digunakan untuk menampilkan navigasi titik dibawah carousel slidernya
         >
-           {ServiceData.map((item) => (
-          <SwiperSlide key={item.title}>
-            <div className="card">
-              <div
-                className="card-background"
-                style={{ backgroundImage: `url(${item.backgroundImage})` }}
-              />
-              <div className="card-overlay" />
-              <div className="card-content">
-                <h1>{item.title}</h1>
+          {ServiceData.map((item) => (
+            <SwiperSlide key={item.title}>
+              <div className="card">
+                <div className="card-background" style={{ backgroundImage: `url(${item.backgroundImage})` }} />
+                <div className="card-overlay" />
+                <div className="card-content">
+                  <h1>{item.title}</h1>
+                </div>
               </div>
-            </div>
-          </SwiperSlide>
-        ))}
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>

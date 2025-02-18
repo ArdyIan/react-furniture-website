@@ -1,8 +1,7 @@
+# FurniShop
 # react-furniture-website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Due to issues when deploying the website, I made this video to showcase the results of the website I built using React.js
 
-Currently, two official plugins are available:
+- [FurniShop Website Youtube](https://youtu.be/kYwhrlWnnCE) 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

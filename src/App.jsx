@@ -9,7 +9,7 @@ import { store } from "./stores";
 import { Provider } from "react-redux";
 import Home from "./pages/home/Home";
 import ProductList from "./pages/productList/productList";
-import Detail from "./pages/detail/detail"
+import Detail from "./pages/detail/detail";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/product" element={<ProductList />} />
-          <Route path="/product/:slug" element={<Detail />} /> 
+          <Route path="/product/:slug" element={<Detail />} />
         </Routes>
       </BrowserRouter>
     </Provider>

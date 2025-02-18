@@ -1,3 +1,5 @@
+//header halaman pertama di bagian subscription
+
 import React from "react";
 import "./header.css";
 import { useState } from "react";
@@ -25,16 +27,16 @@ function Header() {
       // alert("Please confirm you are not a robot.");
     } else {
       try {
-        const response = await fetch("--", {
+        const response = await fetch("your_api_url", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
             Accept: "application/json",
-            Authorization: "Api Key",
+            Authorization: "Api_Key",
           },
           body: JSON.stringify({
             email: email,
-            groups: ["--"],
+            groups: ["group_id"],
           }),
         });
         // if (!response.ok) {
@@ -46,7 +48,7 @@ function Header() {
 
         if (data.errors) {
           //notification for input valid email address
-          
+          //if we not write error message in here API from mailerlite will automatically give us error message
           setErrorMessage(data?.message);
           return;
         }
@@ -64,7 +66,7 @@ function Header() {
         {errorMessage && <p className="error">{errorMessage}</p>}
         {successMessage && <p className="success">{successMessage}</p>}
         <input type="email" placeholder="Email..." value={email} onChange={(e) => setEmail(e.target.value)} required />
-        <ReCAPTCHA ref={recaptchaRef} sitekey="Api Key" />
+        <ReCAPTCHA ref={recaptchaRef} sitekey="sitekey" />
         <button type="submit">Subscribe</button>
       </form>
     </div>

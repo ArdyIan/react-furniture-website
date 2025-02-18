@@ -1,5 +1,6 @@
 import "./navbar.css";
-import livingRoom from "../../assets/living-room.png"; // Path relatif ke Hero.jsx
+import livingRoom from "../../assets/living-room.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   console.log("Navbar loaded");
@@ -20,10 +21,13 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-      <div className="hero-container">
+      <div className="headline-txt">
         <h2 className="main-text">Creative Home Simpify your Furniture</h2>
         <p className="sub-text">Do i have consent to record this meeting gain locaion, root-and-branch, review, nor game plan who’s the goto</p>
-        <button className="btn-shop">Shop Now</button>
+        {/* <button className="btn-shop">Shop Now</button> */}
+        <Link to={"/product"} className="btn-shop">
+          Shop Now
+        </Link>
         {/* <img src={livingRoom} alt="livingRoom" className="livingRoom" /> */}
       </div>
       <div className="info-container">

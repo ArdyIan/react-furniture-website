@@ -35,7 +35,6 @@ const ProductCart = ({ product }) => {
       </div>
     </div>
   );
-  
 };
 
 export default ProductCart;
